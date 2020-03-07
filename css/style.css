@@ -1,0 +1,143 @@
+/* ---------- default setting ---------- */
+html,body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrapper-dark-bg {
+    background:rgba(0,0,0,.3);
+}
+
+/* ---------- nav ---------- */
+.navbar .navbar-brand {    
+    font-size: 1.1rem;
+}
+
+.navbar .navbar-brand .logo {
+    width: 60px;
+    opacity: .7;
+    margin-right: 10px;
+}
+
+/* ---------- sidebar ---------- */
+.sidebar .nav li.nav-header {
+    color: #fff;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.sidebar .nav li.nav-header a {
+    margin: 0;
+}
+
+.sidebar .nav li>a,
+.off-canvas-sidebar .nav li>a {
+    color:rgba(255,255,255,.8);
+    /* margin: 0px 15px; */
+    margin: 0px;
+    padding: 2px 14px;
+    font-size: 1rem;
+}
+
+.sidebar .nav li>ul {
+    list-style: none;
+    padding-left: 15px;
+    font-size: .9rem;
+}
+
+.sidebar .nav li>ul a {
+    font-size: .9rem;
+    /* font-weight: 400; */
+}
+
+@media screen and (min-width: 992px){
+    .sidebar .sidebar-wrapper li.active>a:not([data-toggle="collapse"]):before,
+    .sidebar .sidebar-wrapper li.active>a:not([data-toggle="collapse"]):after {
+        border-width: 10px;
+        right: -30px;
+    }
+}
+
+/* ---------- other ---------- */
+.clip-path-circle {
+    -webkit-clip-path:circle(50% at 50% 50%);
+    clip-path:circle(50% at 50% 50%);
+}
+label.select-all {
+    color:#333;
+    font-size: 14px;
+}
+.card label {
+    color: #66615b;
+}
+.page-link {
+    color:#51bcda;
+}
+.form-check-radio .form-check-label {
+    cursor: pointer;
+}
+textarea.form-control {
+    max-height: none;
+}
+.login-logo {
+    width: 80px;
+    opacity: .7;
+}
+.card-img {
+    height: 200px;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sidebar-custom-style */
+.sidebar fieldset {
+    /* width: 720px; */
+    /* border:#000 3px double; */
+    padding-top: 0;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    color: white;
+  }
+
+  .sidebar legend {
+    color: white;
+    /* background:#336; */
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 1em;
+    width: 20em;
+    transform: translateX(-35px);
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .sidebar legend:hover {
+    background: rgb(101, 101, 184);
+  }
+
+  .sidebar label {
+    width: 6em;
+    float: left;
+  }
+
+  .sidebar .paws {
+    width: 26px;
+    height: 26px;
+  }
+
+  .sidebar .paws1 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sidebar fieldset li {
+    /* list-style: url(images/paws2.png); */
+    list-style-type: disc;
+    /* transform: translateX(-50px); */
+  }

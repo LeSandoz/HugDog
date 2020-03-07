@@ -1,0 +1,49 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+    //jquery全選
+    function CheckedAll() {
+        var checkall = $('#chkAll')[0].checked;
+        $('input:checkbox.chk').each(function () {
+            this.checked = checkall;
+        });
+    }
+    //按鈕全選
+    function selAll() {
+        //變數checkItem為checkbox的集合
+        var checkItem = document.getElementsByName("c1[]");
+        for (var i = 0; i < checkItem.length; i++) {
+            checkItem[i].checked = true;
+        }
+    }
+    function unselAll() {
+        //變數checkItem為checkbox的集合
+        var checkItem = document.getElementsByName("c1[]");
+        for (var i = 0; i < checkItem.length; i++) {
+            checkItem[i].checked = false;
+        }
+    }
+    function usel() {
+        //變數checkItem為checkbox的集合
+        var checkItem = document.getElementsByName("c1[]");
+        for (var i = 0; i < checkItem.length; i++) {
+            checkItem[i].checked = !checkItem[i].checked;
+        }
+    }
+
+</script>
+<form id="form1" action="test2.php" method="post">
+    <input TYPE="checkbox" id="chkAll" onclick="CheckedAll()" />全選
+    <input TYPE="checkbox" name="c1[]" value="1" class="chk">1
+    <input TYPE="checkbox" name="c1[]" value="2" class="chk">2
+    <input TYPE="checkbox" name="c1[]" value="3" class="chk">3
+    <input TYPE="checkbox" name="c1[]" value="4" class="chk">4
+    <input type="checkbox" name="c1[]" value="5" class="chk">5
+    <input type="checkbox" name="c1[]" value="6" class="chk">6
+    <input type="checkbox" name="c1[]" value="7" class="chk">7
+    <input type="checkbox" name="c1[]" value="8" class="chk">8
+    <br>
+    <input type="submit" value="送出">
+    <input type="button" value="全選" onclick="selAll();">
+    <input type="button" value="全取消" onclick="unselAll();">
+    <input type="button" value="反向選取" onclick="usel();">
+</form>

@@ -1,0 +1,53 @@
+.loadingIcon {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: .6;
+    display: none;
+}
+label.required::before{
+    content:'* ';
+    color:#dc3545;
+    display: inline;
+    margin-left: -10px;
+}
+/* form */
+/* .form-control::-webkit-input-placeholder {
+    color: #cccccc;
+} */
+.form-group .form-control,
+.input-group .form-control {
+    padding: .375rem .75rem;
+}
+
+/* serviceInfoDataTable */
+#serviceDataTable #tbody tr:not(.page-navi) td {
+    cursor: pointer;
+}
+
+/* button */
+.btn.btn-gray {
+    background: #ccc;
+}
+.btn.btn-gray:hover,
+.btn.btn-gray:active,
+.btn.btn-gray:focus {
+    background: #aaa !important;
+}
+.btn.btn-light {
+    color: #333 !important;
+    background: #fff;
+}
+.btn.btn-light:hover,
+.btn.btn-light:active,
+.btn.btn-light:focus {
+    color: #333 !important;
+    background: #eee !important;
+}
+/* page-navi */
+.table-hover>tbody>tr.page-navi,
+.table-hover>tbody>tr.page-navi:hover {
+    cursor: default;
+    background: #ffffff;
+}
